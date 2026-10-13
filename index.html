@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed El Mallah — Machine Learning Engineer and Data Enthusiast." />
+  <title>Ahmed El Mallah | Machine Learning Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Ahmed<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+    <nav id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Let's Talk <i data-lucide="arrow-up-right"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</div>
+        <p class="hello">Hello, I'm</p>
+        <h1>Ahmed El<br><span class="accent">Mallah.</span></h1>
+        <h2>Machine Learning Engineer <span class="muted">&amp; Data Enthusiast</span></h2>
+        <p class="hero-description">I turn data into meaningful insights and build machine learning solutions that help people make smarter, data-driven decisions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore My Work <i data-lucide="arrow-up-right"></i></a>
+          <a class="button secondary" href="#contact">Contact Me <i data-lucide="mail"></i></a>
+        </div>
+        <div class="socials">
+          <!-- Replace # with your real profile URLs -->
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative data visualization">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-card main-card">
+          <div class="card-top"><span class="tiny-dot"></span><span class="tiny-dot"></span><span class="tiny-dot"></span><span class="card-label">MODEL PERFORMANCE</span></div>
+          <div class="chart-title">Predictive Insights</div>
+          <div class="chart">
+            <div class="chart-grid"></div>
+            <svg viewBox="0 0 340 130" role="img" aria-label="Decorative upward data trend"><polyline points="0,108 36,91 68,99 102,65 139,78 174,44 211,58 249,25 284,37 340,8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><polyline points="0,108 36,91 68,99 102,65 139,78 174,44 211,58 249,25 284,37 340,8 340,130 0,130" fill="currentColor" opacity=".08"/></svg>
+          </div>
+          <div class="chart-footer"><span><b class="green">↗</b> Data-driven solutions</span><span class="pill">ML / AI</span></div>
+        </div>
+        <div class="float-chip chip-python"><span class="chip-icon">Py</span><span><b>Python</b><small>Data & ML</small></span></div>
+        <div class="float-chip chip-power"><span class="chip-icon power-icon">▥</span><span><b>Power BI</b><small>Data stories</small></span></div>
+        <div class="float-chip chip-model"><i data-lucide="brain-circuit"></i><span><b>Machine Learning</b><small>Predict · Analyze · Improve</small></span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-label">01 / ABOUT ME</div>
+      <div class="section-heading"><h2>Curious about data.<br><span class="accent">Driven by impact.</span></h2></div>
+      <div class="about-content">
+        <p class="large-copy">I’m a Machine Learning Engineer passionate about discovering the stories hidden inside data.</p>
+        <p>I enjoy working across the machine learning workflow—from data cleaning and exploratory analysis to model development and communicating results through clear, interactive dashboards. My goal is to turn complex technical work into useful, understandable outcomes.</p>
+        <div class="mini-stats"><div><strong>ML</strong><span>Predictive Modeling</span></div><div><strong>Data</strong><span>Analysis & Preparation</span></div><div><strong>BI</strong><span>Interactive Dashboards</span></div></div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-label">02 / TOOLKIT</div>
+      <div class="section-heading"><h2>Tools I work <span class="accent">with.</span></h2><p>A growing toolkit for solving data problems and building practical solutions.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><i data-lucide="code-2"></i><h3>Programming</h3><div class="tags"><span>Python</span><span>SQL</span></div></article>
+        <article class="skill-card"><i data-lucide="chart-no-axes-combined"></i><h3>Data Analysis</h3><div class="tags"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div></article>
+        <article class="skill-card"><i data-lucide="brain-circuit"></i><h3>Machine Learning</h3><div class="tags"><span>Scikit-learn</span><span>Model Evaluation</span><span>Preprocessing</span></div></article>
+        <article class="skill-card"><i data-lucide="layout-dashboard"></i><h3>Business Intelligence</h3><div class="tags"><span>Power BI</span><span>Dashboards</span><span>Data Storytelling</span></div></article>
+      </div>
+      <p class="note">Only keep tools and skills you can confidently discuss in an interview.</p>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-label">03 / SELECTED WORK</div>
+      <div class="section-heading project-heading"><h2>Projects that turn<br><span class="accent">ideas into insights.</span></h2><p>A selection of my work. Project details and links can be updated as your portfolio grows.</p></div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-one"><div class="visual-window"><div class="window-bar"><span></span><span></span><span></span></div><div class="visual-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:82%"></i><i style="height:69%"></i><i style="height:94%"></i></div><div class="visual-line"></div></div><span class="visual-tag">MACHINE LEARNING</span></div>
+          <div class="project-info"><div class="project-meta">01 <span>•</span> Predictive Modeling</div><h3>Sales Prediction Model</h3><p>A machine learning workflow to explore data, prepare features, train regression models, and evaluate predictive performance.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div><div class="project-links"><a href="#" target="_blank" rel="noreferrer">View Code <i data-lucide="arrow-up-right"></i></a><a href="#" target="_blank" rel="noreferrer">Case Study <i data-lucide="arrow-up-right"></i></a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-two"><div class="dashboard-mock"><div class="dash-title">Business Overview</div><div class="dash-kpis"><span><b>Sales</b><strong>+18.4%</strong></span><span><b>Growth</b><strong>+12.1%</strong></span></div><div class="dash-chart"><i style="height:30%"></i><i style="height:50%"></i><i style="height:40%"></i><i style="height:75%"></i><i style="height:58%"></i><i style="height:92%"></i><i style="height:68%"></i></div></div><span class="visual-tag">BUSINESS INTELLIGENCE</span></div>
+          <div class="project-info"><div class="project-meta">02 <span>•</span> Data Visualization</div><h3>Interactive Power BI Dashboard</h3><p>A business dashboard concept for tracking key performance indicators and presenting insights in an accessible visual format.</p><div class="tags"><span>Power BI</span><span>Data Modeling</span><span>Visualization</span></div><div class="project-links"><a href="#" target="_blank" rel="noreferrer">View Dashboard <i data-lucide="arrow-up-right"></i></a><a href="#" target="_blank" rel="noreferrer">View Details <i data-lucide="arrow-up-right"></i></a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-three"><div class="pipeline"><span>Raw Data</span><i data-lucide="arrow-down"></i><span>Preprocessing</span><i data-lucide="arrow-down"></i><span>Model</span><i data-lucide="arrow-down"></i><span class="pipeline-output">Insights</span></div><span class="visual-tag">DATA SCIENCE</span></div>
+          <div class="project-info"><div class="project-meta">03 <span>•</span> End-to-End Workflow</div><h3>Data Analysis & ML Pipeline</h3><p>An end-to-end workflow covering data cleaning, exploratory data analysis, feature preparation, model training, and evaluation.</p><div class="tags"><span>Python</span><span>EDA</span><span>Scikit-learn</span></div><div class="project-links"><a href="#" target="_blank" rel="noreferrer">View Code <i data-lucide="arrow-up-right"></i></a><a href="#" target="_blank" rel="noreferrer">View Details <i data-lucide="arrow-up-right"></i></a></div></div>
+        </article>
+      </div>
+      <p class="note">The projects above are starter examples, not claims of completed work. Replace them with your real projects, metrics, and links before publishing.</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-label">04 / CONTACT</div>
+      <div class="contact-inner"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s build something<br><span class="accent">meaningful.</span></h2><p>Interested in collaboration, internships, or data-driven projects? Feel free to reach out.</p></div><a class="button primary contact-button" href="mailto:your.email@example.com">Get in Touch <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="contact-links"><a href="#" target="_blank" rel="noreferrer"><i data-lucide="github"></i> GitHub</a><a href="#" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i> LinkedIn</a><a href="mailto:your.email@example.com"><i data-lucide="mail"></i> Email</a></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home">Ahmed<span>.</span></a><p>Designed with curiosity. Built around data.</p><span>© <span id="year"></span> Ahmed El Mallah</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
