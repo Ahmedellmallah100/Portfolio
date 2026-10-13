@@ -1,10 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import rahmaPhoto from "@/imports/photo_white.jfif";
-import edaThumb from "@/imports/image-7.png";
-import signNovaThumb from "@/imports/image-9.png";
-import olistThumb from "@/imports/image-10.png";
-import arabicSentimentThumb from "@/imports/prject4_poto.jfif";
+import ahmedPhoto from "@/imports/ahmed-avatar.svg";
+import breastCancerThumb from "@/imports/breast-cancer.svg";
+import bigMartThumb from "@/imports/bigmart-sales.svg";
 
 const EMAILJS_SERVICE_ID = "service_revpxkn";
 const EMAILJS_TEMPLATE_ID = "template_eidauss";
@@ -168,7 +166,7 @@ function Nav() {
           {/* Wordmark */}
           <div style={{ display:"flex", flexDirection:"column", lineHeight:1 }}>
             <span style={{ fontWeight:800, fontSize:".95rem", letterSpacing:"-.03em", color:"#FFFFFF" }}>
-              Rahma <span style={{ color:"#F59E0B" }}>Elhagary</span>
+              Ahmed Hamed <span style={{ color:"#F59E0B" }}>Elmallah</span>
             </span>
             <span style={{ fontFamily:"var(--font-mono)", fontSize:".52rem", color:"rgba(203,213,225,.7)", letterSpacing:".1em", marginTop:2 }}>
               AI/ML ENGINEER
@@ -270,13 +268,13 @@ function Hero() {
 
             {/* Bio */}
             <p style={{ fontSize:"1rem", color:T.textMuted, lineHeight:1.85, maxWidth:490, marginBottom:44, fontWeight:400 }}>
-              Junior AI &amp; ML Engineer with hands-on technical expertise in building, evaluating, and deploying robust predictive models. Turning complex data and research into reliable, high-impact production systems.
+              Engineering student interested in Machine Learning with hands-on technical expertise in building, evaluating, and deploying robust predictive models. Turning complex data and research into reliable, high-impact production systems.
             </p>
 
             {/* 3 action buttons */}
             <div style={{ display:"flex", gap:12, flexWrap:"wrap" }}>
               <PrimaryBtn href="#projects">Explore Projects</PrimaryBtn>
-              <CVBtn href="https://drive.google.com/file/d/11ZpLjUzjW-ACVmu4wpv_E3vK9WKGVYmZ/view?usp=sharing">View CV</CVBtn>
+              <CVBtn href="https://drive.google.com/file/d/1TC28D1MheXgW1JxBB6RNdAXnJvLKYw29/view?usp=drivesdk">View CV</CVBtn>
               <GhostBtn href="#contact">Contact Me</GhostBtn>
             </div>
           </div>
@@ -306,8 +304,8 @@ function Hero() {
                 overflow:"hidden", border:`1.5px solid rgba(16,185,129,.3)`,
               }}>
                 <img
-                  src={rahmaPhoto}
-                  alt="Rahma Elhagary"
+                  src={ahmedPhoto}
+                  alt="Ahmed Hamed Elmallah"
                   style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top" }}
                 />
               </div>
@@ -315,8 +313,8 @@ function Hero() {
 
             {/* Name card */}
             <div style={{ ...G("em"), padding:"14px 30px", textAlign:"center" }}>
-              <div style={{ fontWeight:700, fontSize:"1.08rem", letterSpacing:"-.02em", color:T.text }}>Rahma Elhagary</div>
-              <div style={{ fontFamily:"var(--font-mono)", fontSize:".67rem", color:T.em, marginTop:4 }}>Junior AI/ML Engineer</div>
+              <div style={{ fontWeight:700, fontSize:"1.08rem", letterSpacing:"-.02em", color:T.text }}>Ahmed Hamed Elmallah</div>
+              <div style={{ fontFamily:"var(--font-mono)", fontSize:".67rem", color:T.em, marginTop:4 }}>Machine Learning Enthusiast</div>
             </div>
 
             {/* Static "available" badge */}
@@ -405,28 +403,17 @@ function About() {
           {/* Paragraphs */}
           <div style={{ display:"flex", flexDirection:"column", gap:22 }}>
             <p style={{ fontSize:"1rem", color:T.textMuted, lineHeight:1.88, margin:0 }}>
-              Junior AI and Machine Learning Engineer, currently ranking{" "}
-              <strong style={{ color:T.em, fontWeight:600 }}>1st in my class</strong>{" "}
-              studying Computer Science and Artificial Intelligence at{" "}
-              <strong style={{ color:T.text, fontWeight:600 }}>Damietta University</strong>.
-              I bridge the gap between complex research and scalable production systems.
+              I am an Engineering student at{" "}
+              <strong style={{ color:T.text, fontWeight:600 }}>Mansoura University</strong>, specializing in Telecommunications and Electronics Engineering, with a growing focus on{" "}
+              <strong style={{ color:T.em, fontWeight:600 }}>Artificial Intelligence and Machine Learning</strong>. I enjoy turning data into practical, useful predictions through hands-on projects.
             </p>
 
             <p style={{ fontSize:"1rem", color:T.textMuted, lineHeight:1.88, margin:0 }}>
-              With hands-on expertise in{" "}
-              <strong style={{ color:T.em, fontWeight:600 }}>Python, TensorFlow, PyTorch,</strong>{" "}
-              and <strong style={{ color:T.em, fontWeight:600 }}>scikit-learn</strong>, I specialize in
-              building, evaluating, and deploying robust predictive models, driven by a strong foundation in{" "}
-              <strong style={{ color:T.vi, fontWeight:600 }}>data cleaning and preprocessing</strong>.
+              My current focus is on <strong style={{ color:T.em, fontWeight:600 }}>Python, Pandas, NumPy, and scikit-learn</strong>, including data cleaning, preprocessing, regression, classification, and model evaluation. I am continuously building my skills through practical projects and experimentation.
             </p>
 
             <p style={{ fontSize:"1rem", color:T.textMuted, lineHeight:1.88, margin:0 }}>
-              Beyond engineering, I am an{" "}
-              <strong style={{ color:"#FCD34D", fontWeight:600 }}>ECPC Finals Qualifier</strong>{" "}
-              and currently serving as the{" "}
-              <strong style={{ color:T.em, fontWeight:600 }}>Technical Vice Head</strong> and an active mentor at the{" "}
-              <strong style={{ color:T.em, fontWeight:600 }}>ACPC Damietta Club</strong>,
-              guiding students through advanced Data Structures and Algorithms.
+              I am especially interested in developing reliable machine learning models, understanding why they work, and communicating results clearly. My portfolio highlights projects that demonstrate my learning and practical problem-solving approach.
             </p>
           </div>
 
@@ -434,9 +421,9 @@ function About() {
           <div style={{ borderTop:`1px solid ${T.bdr}`, marginTop:36, paddingTop:28 }}>
             <div style={{ display:"flex", flexWrap:"wrap", gap:10 }}>
               {[
-                { icon:"🎓", label:"B.Sc. CS & AI · GPA 3.7 · Ranked 1st" },
-                { icon:"🏆", label:"ECPC Finals Qualifier" },
-                { icon:"🤝", label:"ACPC Mentor · 20+ Students" },
+                { icon:"🎓", label:"Telecommunications & Electronics Engineering" },
+                { icon:"🤖", label:"AI & Machine Learning" },
+                { icon:"📊", label:"Practical ML Projects" },
               ].map(({ icon, label }) => (
                 <div key={label} style={{
                   display:"inline-flex", alignItems:"center", gap:8,
@@ -537,57 +524,30 @@ function ServiceCard({ s }: { s:typeof SERVICES[0] }) {
 ══════════════════════════════════════════ */
 const PROJECTS = [
   {
-    id:"01", accent:"em" as const,
-    name:"SignNova",
-    category:"Computer Vision · NLP · PyTorch",
-    mockBg:"#060E12",
-    gradA:"rgba(16,185,129,.22)", gradB:"rgba(139,92,246,.16)",
-    tagline:"Real-time American Sign Language (ASL) recognition system achieving 95% accuracy.",
-    problem:"Deaf and hard-of-hearing communities face significant communication barriers with standard interfaces and no real-time translation tools.",
-    solution:"Transformer-based vision model trained on ASL gesture datasets using PyTorch, with real-time inference pipeline and an accessible web interface.",
-    metrics:[{ k:"Accuracy",v:"95%" }, { k:"Framework",v:"PyTorch" }, { k:"Type",v:"Real-time" }, { k:"Domain",v:"ASL" }],
-    tech:["PyTorch","Transformers","Computer Vision","OpenCV","Python","HuggingFace"],
-    github:"https://github.com/mayarShappan/Soft_project", demo:null,
+    id:"01", accent:"vi" as const,
+    name:"Breast Cancer Prediction",
+    category:"Machine Learning · Binary Classification",
+    mockBg:"#0A1020",
+    gradA:"rgba(244,114,182,.22)", gradB:"rgba(192,132,252,.16)",
+    tagline:"A Logistic Regression model that classifies breast tumors as malignant or benign using the Wisconsin Diagnostic Breast Cancer dataset.",
+    problem:"Early risk assessment depends on interpreting multiple diagnostic measurements. This project explores how a supervised classification model can support this task while keeping evaluation metrics visible.",
+    solution:"Exploratory data analysis, removal of non-informative columns such as id and Unnamed: 32, target encoding for M/B labels, a preprocessing pipeline, Logistic Regression with class_weight='balanced', and classification evaluation.",
+    metrics:[{ k:"Model",v:"Logistic Reg." }, { k:"Task",v:"Binary Class." }, { k:"Classes",v:"M / B" }, { k:"Dataset",v:"Wisconsin" }],
+    tech:["Python","Pandas","Seaborn","scikit-learn","Pipeline","Classification"],
+    github:"https://github.com/Ahmedellmallah100/Logistic-Regression-on-Breast-Cancer", demo:null,
   },
   {
-    id:"02", accent:"vi" as const,
-    name:"Egypt Real Estate Valuation",
-    category:"Data Science · Machine Learning · XGBoost",
-    mockBg:"#0A0712",
-    gradA:"rgba(139,92,246,.22)", gradB:"rgba(6,182,212,.16)",
-    tagline:"An AI-driven system analyzing ~39,000 real estate listings in Egypt to predict property prices using advanced ML techniques with XGBoost.",
-    problem:"Egypt's real estate market lacked reliable data-driven pricing tools, leaving buyers and sellers relying on inconsistent manual estimates.",
-    solution:"Built a full ML pipeline with extensive data cleaning on ~39,000 listings, log-transformed price scaling, and XGBoost as the best-performing model for accurate property price prediction.",
-    metrics:[{ k:"Records",v:"39K+" }, { k:"Best Model",v:"XGBoost" }, { k:"Price Scaling",v:"Log-Transformed" }, { k:"Stack",v:"Python" }],
-    tech:["Python","scikit-learn","XGBoost","Pandas","Data Cleaning"],
-    github:"https://github.com/RahmaElhagary/Real_estate_project", demo:null,
-  },
-  {
-    id:"03", accent:"em" as const,
-    name:"Olist E-Commerce RFM Dashboard",
-    category:"Data Analysis • Business Intelligence • DAX",
-    mockBg:"#0A1017",
-    gradA:"rgba(16,185,129,.22)", gradB:"rgba(6,182,212,.16)",
-    tagline:"An interactive Power BI dashboard analyzing 96K+ e-commerce orders. Engineered advanced DAX measures for RFM customer segmentation and designed a premium, dark-themed UI for actionable geographic and revenue insights.",
-    problem:"E-commerce performance data needed a clear way to reveal customer value, retention opportunities, and geographic revenue patterns across 96K+ orders.",
-    solution:"Built an interactive Power BI dashboard with advanced DAX measures, RFM customer segmentation, cleaned data, and focused visual storytelling for revenue and geographic insights.",
-    metrics:[{ k:"Orders Analyzed",v:"96K+" }, { k:"Customer Segmentation",v:"RFM Model" }, { k:"Data Modeling",v:"Advanced DAX" }, { k:"Dashboard Design",v:"Premium UI" }],
-    tech:["Power BI","DAX","Power Query","Data Visualization","Data Cleaning","RFM Analysis"],
-    github:"https://github.com/RahmaElhagary/Olist-E-Commerce-RFM-Dashboard", demo:null,
-  },
-  {
-    id:"04", accent:"vi" as const,
-    name:"Arabic Sentiment Analysis Dashboard",
-    category:"NLP • Deep Learning • Streamlit",
-    mockBg:"#0A0712",
-    gradA:"rgba(139,92,246,.22)", gradB:"rgba(6,182,212,.16)",
-    tagline:"An interactive AI-driven system for real-time sentiment analysis of Arabic customer reviews and feedback, achieving high accuracy using advanced BERT models.",
-    problem:"E-commerce businesses struggle to monitor and analyze Arabic customer feedback efficiently due to language nuances and a lack of real-time sentiment analysis tools.",
-    solution:"An interactive AI-driven dashboard leveraging the advanced CAMeL-Lab BERT model for real-time Arabic sentiment classification, paired with dynamic Plotly visual analytics built using Streamlit.",
-    metrics:[{ k:"CAMeL-Lab Model",v:"BERT-Base" }, { k:"Live Analytics",v:"Real-time" }, { k:"Framework",v:"Streamlit" }, { k:"Domain",v:"Arabic NLP" }],
-    tech:["Python","Streamlit","Transformers","PyTorch","Plotly","NLP"],
-    github:"https://github.com/RahmaElhagary/Arabic-Sentiment-Dashboard",
-    demo:"https://arabic-sentiment-dashboard-jtxejce7waaqoyeudazfpb.streamlit.app/",
+    id:"02", accent:"em" as const,
+    name:"BigMart Sales Prediction",
+    category:"Machine Learning · Regression",
+    mockBg:"#07191D",
+    gradA:"rgba(45,212,191,.22)", gradB:"rgba(96,165,250,.16)",
+    tagline:"A regression project exploring how product and outlet features can be used to estimate item outlet sales.",
+    problem:"Retail sales depend on multiple item and outlet attributes. This project compares regression approaches and evaluates how well they estimate sales on unseen data.",
+    solution:"Data preprocessing with numerical and categorical feature handling, regression modeling with Linear Regression and Polynomial Regression, and evaluation using R², MAE, and RMSE. A Streamlit interface can be linked if deployed.",
+    metrics:[{ k:"Task",v:"Regression" }, { k:"Models",v:"Linear / Poly" }, { k:"Metrics",v:"R² · MAE" }, { k:"Tools",v:"Python" }],
+    tech:["Python","Pandas","scikit-learn","Regression","Feature Engineering","Streamlit"],
+    github:"", demo:null,
   },
 ];
 
@@ -624,43 +584,18 @@ function ProjectCard({ p, open, onToggle }: { p:typeof PROJECTS[0]; open:boolean
       {/* Thumbnail */}
       <div style={{ height:168, background:p.mockBg, position:"relative", overflow:"hidden", flexShrink:0 }}>
         <div style={{ position:"absolute", inset:0, background:`linear-gradient(135deg, ${p.gradA} 0%, ${p.gradB} 100%)` }}/>
-        {p.id === "02" ? (
+        {p.id === "01" ? (
           <img
-            src={edaThumb}
-            alt="EDA charts thumbnail"
-            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"top left", opacity:.82 }}
-          />
-        ) : p.id === "01" ? (
-          <img
-            src={signNovaThumb}
-            alt="SignNova ASL recognition system"
-            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"top center", opacity:.82 }}
-          />
-        ) : p.id === "03" ? (
-          <img
-            src={olistThumb}
-            alt="Olist E-Commerce RFM Power BI dashboard"
-            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"top center", opacity:.88 }}
-          />
-        ) : p.id === "04" ? (
-          <img
-            src={arabicSentimentThumb}
-            alt="Arabic Sentiment Analysis Dashboard"
-            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"top center", opacity:.88 }}
+            src={breastCancerThumb}
+            alt="Breast cancer classification project visual"
+            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center", opacity:.94 }}
           />
         ) : (
-          /* Faux UI for other projects */
-          <div style={{ position:"absolute", inset:0, padding:"1rem" }}>
-            <div style={{ display:"flex", gap:6, marginBottom:12 }}>
-              {["#FF5F57","#FFBD2E","#28C840"].map(c=><span key={c} style={{ width:9,height:9,borderRadius:"50%",background:c,display:"inline-block" }}/>)}
-            </div>
-            {[[75,35],[55,60],[42,50]].map(([a,b],i) => (
-              <div key={i} style={{ display:"flex",gap:8,marginBottom:8 }}>
-                <div style={{ height:i===0?20:13,width:`${a}%`,borderRadius:5,background:"rgba(255,255,255,.08)",border:"1px solid rgba(255,255,255,.07)" }}/>
-                <div style={{ height:i===0?20:13,width:`${b}%`,borderRadius:5,background:i===0?`${gl}`:"rgba(255,255,255,.04)",border:"1px solid rgba(255,255,255,.05)" }}/>
-              </div>
-            ))}
-          </div>
+          <img
+            src={bigMartThumb}
+            alt="BigMart sales prediction project visual"
+            style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center", opacity:.94 }}
+          />
         )}
         <div style={{ position:"absolute", bottom:0, left:0, right:0, height:56, background:`linear-gradient(to top, ${p.mockBg}, transparent)` }}/>
         <div style={{ position:"absolute", top:10, right:10, fontFamily:"var(--font-mono)", fontSize:".6rem", color:ac, background:"rgba(0,0,0,.6)", padding:"2px 8px", borderRadius:5, border:`1px solid ${p.accent==="em"?T.bdrEm:T.bdrVi}` }}>/{p.id}</div>
@@ -710,7 +645,7 @@ function ProjectCard({ p, open, onToggle }: { p:typeof PROJECTS[0]; open:boolean
             {p.tech.map(t => <MonoChip key={t} label={t} accent={p.accent} small />)}
           </div>
           <div style={{ display:"flex", gap:6 }}>
-            <TinyBtn href={p.github}>GitHub</TinyBtn>
+            {p.github && <TinyBtn href={p.github}>GitHub</TinyBtn>}
             {p.demo&&<TinyBtn href={p.demo}>{p.id === "04" ? "Live App" : "Demo ↗"}</TinyBtn>}
           </div>
         </div>
@@ -1039,11 +974,11 @@ function Contact() {
             {[
               {
                 icon:<svg width="18" height="18" viewBox="0 0 15 15" fill="none"><rect x="1" y="3" width="13" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.2"/><path d="M1 5l6.5 4.5L14 5" stroke="currentColor" strokeWidth="1.2"/></svg>,
-                label:"Email", value:"rmelhagary@gmail.com", href:"mailto:rmelhagary@gmail.com",
+                label:"LinkedIn", value:"linkedin.com/in/ahmed-ellmallah-86883b341", href:"https://www.linkedin.com/in/ahmed-ellmallah-86883b341",
               },
               {
                 icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 2h3.5l1.5 4-2 1.5a10 10 0 0 0 4.5 4.5L12 10l4 1.5V15a2 2 0 0 1-2 2C6 17 1 12 1 4a2 2 0 0 1 2-2z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>,
-                label:"Phone", value:"+20 10 1374 2751", href:"tel:+20201013742751",
+                label:"GitHub", value:"github.com/Ahmedellmallah100", href:"https://github.com/Ahmedellmallah100",
               },
               {
                 icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1a6 6 0 0 1 6 6c0 4-6 10-6 10S3 11 3 7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="1.4"/><circle cx="9" cy="7" r="2" stroke="currentColor" strokeWidth="1.3"/></svg>,
@@ -1085,8 +1020,8 @@ function Contact() {
             {/* Social icon buttons */}
             <div style={{ display:"flex", gap:12, marginTop:8 }}>
               {[
-                { label:"LinkedIn", href:"https://linkedin.com/in/rahma-elhagary", icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="1.4"/><path d="M5 7v6M5 4.5v.5M8 13V9.5C8 8.1 9 7 10.5 7S13 8.1 13 9.5V13M8 7v6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg> },
-                { label:"GitHub", href:"https://github.com/RahmaElhagary", icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34C4.73 15.4 4.26 13.8 4.26 13.8A2.2 2.2 0 0 0 3.34 12.5c-.75-.51.06-.5.06-.5a1.74 1.74 0 0 1 1.27.85 1.77 1.77 0 0 0 2.42.69 1.77 1.77 0 0 1 .53-1.11C5.3 12.19 3.5 11.52 3.5 8.5a3.1 3.1 0 0 1 .82-2.14 2.87 2.87 0 0 1 .08-2.11s.67-.22 2.2.82a7.57 7.57 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82a2.87 2.87 0 0 1 .08 2.11A3.1 3.1 0 0 1 13.5 8.5c0 3.03-1.8 3.69-3.53 3.88a1.98 1.98 0 0 1 .56 1.54v2.28c0 .21.14.46.55.38A8 8 0 0 0 9 1z" stroke="currentColor" strokeWidth=".5" fill="currentColor"/></svg> },
+                { label:"LinkedIn", href:"https://www.linkedin.com/in/ahmed-ellmallah-86883b341", icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="1.4"/><path d="M5 7v6M5 4.5v.5M8 13V9.5C8 8.1 9 7 10.5 7S13 8.1 13 9.5V13M8 7v6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg> },
+                { label:"GitHub", href:"https://github.com/Ahmedellmallah100", icon:<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34C4.73 15.4 4.26 13.8 4.26 13.8A2.2 2.2 0 0 0 3.34 12.5c-.75-.51.06-.5.06-.5a1.74 1.74 0 0 1 1.27.85 1.77 1.77 0 0 0 2.42.69 1.77 1.77 0 0 1 .53-1.11C5.3 12.19 3.5 11.52 3.5 8.5a3.1 3.1 0 0 1 .82-2.14 2.87 2.87 0 0 1 .08-2.11s.67-.22 2.2.82a7.57 7.57 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82a2.87 2.87 0 0 1 .08 2.11A3.1 3.1 0 0 1 13.5 8.5c0 3.03-1.8 3.69-3.53 3.88a1.98 1.98 0 0 1 .56 1.54v2.28c0 .21.14.46.55.38A8 8 0 0 0 9 1z" stroke="currentColor" strokeWidth=".5" fill="currentColor"/></svg> },
               ].map(({ label, href, icon }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                   title={label}
@@ -1112,7 +1047,7 @@ function Contact() {
           {/* Left: copyright */}
           <span style={{ fontSize:".82rem", color:"rgba(148,163,184,.65)", fontWeight:400 }}>
             © {new Date().getFullYear()}{" "}
-            <span style={{ color:"#F59E0B", fontWeight:600 }}>Rahma Elhagary</span>
+            <span style={{ color:"#F59E0B", fontWeight:600 }}>Ahmed Hamed Elmallah</span>
             . All rights reserved.
           </span>
 
@@ -1120,7 +1055,7 @@ function Contact() {
           <div style={{ display:"flex", gap:10 }}>
             {[
               {
-                href: "https://linkedin.com/in/rahma-elhagary",
+                href: "https://www.linkedin.com/in/ahmed-ellmallah-86883b341",
                 label: "LinkedIn",
                 icon: (
                   <svg width="15" height="15" viewBox="0 0 18 18" fill="none">
@@ -1130,7 +1065,7 @@ function Contact() {
                 ),
               },
               {
-                href: "https://github.com/RahmaElhagary",
+                href: "https://github.com/Ahmedellmallah100",
                 label: "GitHub",
                 icon: (
                   <svg width="15" height="15" viewBox="0 0 18 18" fill="none">
@@ -1139,8 +1074,8 @@ function Contact() {
                 ),
               },
               {
-                href: "mailto:rmelhagary@gmail.com",
-                label: "Email",
+                href: "https://www.linkedin.com/in/ahmed-ellmallah-86883b341",
+                label: "LinkedIn",
                 icon: (
                   <svg width="15" height="15" viewBox="0 0 18 18" fill="none">
                     <rect x="1" y="4" width="16" height="11" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
@@ -1270,19 +1205,19 @@ function EduCard({ gold, goldL, goldGlow, goldBdr, goldBdrH }: { gold:string; go
 
         {/* Institution */}
         <div style={{ fontWeight: 800, fontSize: "1.18rem", color: T.text, letterSpacing: "-.03em", lineHeight: 1.2, marginBottom: 4 }}>
-          Damietta University
+          Mansoura University
         </div>
 
         {/* Degree */}
         <div style={{ fontSize: ".95rem", color: T.textSub, fontWeight: 500, lineHeight: 1.45, marginBottom: 20 }}>
-          Bachelor&apos;s Degree in Computer Science and Artificial Intelligence
+          Telecommunications and Electronics Engineering
         </div>
 
         {/* Meta row */}
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
           {[
-            { icon: "📈", text: `GPA: 3.7 / 4.0 — Ranked 1st in the class`, color: goldL },
-            { icon: "📅", text: "09/2023 — 2027 (Expected)", color: T.textSub },
+            { icon: "📚", text: "Engineering Undergraduate", color: goldL },
+            { icon: "🎯", text: "AI & Machine Learning Focus", color: T.textSub },
             { icon: "📍", text: "Damietta, Egypt", color: T.textSub },
           ].map(({ icon, text, color }) => (
             <div key={text} style={{
@@ -1306,42 +1241,15 @@ function EduCard({ gold, goldL, goldGlow, goldBdr, goldBdrH }: { gold:string; go
 const EXPERIENCE = [
   {
     accent: "em" as const,
-    badge: "LEADERSHIP",
+    badge: "TRAINING",
     badgeBg: "rgba(16,185,129,.10)",
     icon: <IcBriefcase color="#10B981" />,
-    role: "Technical Vice Head",
-    company: "ACPC Damietta Club",
-    location: "Damietta, Egypt",
-    date: "09/2026 – Present",
-    bullets: [
-      "Spearheaded technical operations and strategic planning for club training tracks, enhancing competitive programming readiness.",
-    ],
-  },
-  {
-    accent: "vi" as const,
-    badge: "INTERNSHIP",
-    badgeBg: "rgba(139,92,246,.10)",
-    icon: <IcBuilding color="#8B5CF6" />,
     role: "AI & Machine Learning Trainee",
-    company: "DEPI",
-    location: "Hybrid",
-    date: "07/2026 – Present",
+    company: "AI/ML Training & Practical Projects",
+    location: "Egypt",
+    date: "Ongoing",
     bullets: [
-      "Engineered and deployed Python ML/DL models (NLP, Vision, Prompt Engineering) on Azure cloud infrastructure.",
-      "Implemented MLOps best practices via MLflow and Hugging Face.",
-    ],
-  },
-  {
-    accent: "em" as const,
-    badge: "MENTORSHIP",
-    badgeBg: "rgba(16,185,129,.10)",
-    icon: <IcUsers color="#10B981" />,
-    role: "Mentor, ACPC Damietta Club",
-    company: "ACPC Damietta Club",
-    location: "Damietta, Egypt",
-    date: "2/2025 – Present",
-    bullets: [
-      "Led and mentored a group of 20+ students in advanced Data Structures and Algorithms, providing structured guidance on algorithmic logic and competitive programming.",
+      "Building practical machine learning projects involving data preprocessing, regression, classification, and model evaluation.",
     ],
   },
 ];
