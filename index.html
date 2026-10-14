@@ -1,17 +1,73 @@
-<!doctype html>
-<html lang="<!-- figma:lang -->">
-  <head>
-    <!-- figma:head-start -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
-  </head>
-  <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Hamed Ellmallah | Aspiring Machine Learning Engineer</title>
+<meta name="description" content="Portfolio of Ahmed Hamed Ellmallah, Electronics and Communication Engineering student and Microsoft Machine Learning Engineer Trainee building regression and classification pipelines in Python.">
+<meta property="og:title" content="Ahmed Hamed Ellmallah | Aspiring Machine Learning Engineer">
+<meta property="og:description" content="ML projects, training and skills of Ahmed Hamed Ellmallah.">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><a class="logo" href="#home" aria-label="Home">AE<span>.</span></a>
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section id="home" class="hero wrap">
+<div class="hero-text reveal">
+<p class="eyebrow">Hi, I'm</p>
+<h1>Ahmed Hamed Ellmallah</h1>
+<h2>Aspiring <span class="grad">Machine Learning Engineer</span></h2>
+<p class="lead">Electronics and Communication Engineering student and Microsoft Machine Learning Engineer Trainee, building regression and classification pipelines in Python and Scikit-Learn.</p>
+<div class="cta"><a class="btn primary" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/ahmed-ellmallah" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:ahmedellmalllah@gmail.com">Email</a></div>
+</div>
+<div class="photo reveal"><span class="initials" aria-hidden="true">AE</span><img src="assets/photo.jpg" alt="Portrait of Ahmed Hamed Ellmallah" width="400" height="400" fetchpriority="high" onerror="this.remove()"></div>
+</section>
+
+<section id="about" class="wrap reveal"><h2 class="title">About Me</h2>
+<p>I am a second-year Electronics and Communication Engineering student at Mansoura University seeking Machine Learning, Artificial Intelligence, and Data Science internships.</p>
+<p>I am currently a Microsoft Machine Learning Engineer Trainee at the Digital Egypt Pioneers Initiative (DEPI), and I completed AI training at the National Telecommunication Institute (NTI). My hands-on work covers data cleaning, exploratory data analysis, feature engineering, hyperparameter tuning, and model evaluation.</p>
+<p>My goal is to grow into a Machine Learning Engineer who turns data into reliable models.</p></section>
+
+<section id="skills" class="wrap"><h2 class="title reveal">Technical Skills</h2><div class="grid reveal">
+<div class="card"><h3>Programming</h3><ul class="chips"><li>Python</li><li>Dart</li><li>SQL</li></ul></div>
+<div class="card"><h3>Machine Learning</h3><ul class="chips"><li>Scikit-Learn</li><li>TensorFlow</li><li>Pandas</li><li>NumPy</li></ul></div>
+<div class="card"><h3>ML Algorithms</h3><ul class="chips"><li>Linear Regression</li><li>Polynomial Regression</li><li>Logistic Regression</li><li>Decision Tree</li><li>Random Forest</li><li>Gradient Boosting</li><li>XGBoost</li></ul></div>
+<div class="card"><h3>Data Preprocessing</h3><ul class="chips"><li>Data Cleaning</li><li>EDA</li><li>Feature Engineering</li><li>Outlier Detection (IQR)</li><li>StandardScaler</li><li>One-Hot Encoding</li><li>SimpleImputer</li><li>ColumnTransformer</li></ul></div>
+<div class="card"><h3>Model Evaluation</h3><ul class="chips"><li>MAE</li><li>MSE</li><li>R²</li><li>Accuracy</li><li>Precision</li><li>Recall</li><li>F1-score</li><li>Confusion Matrix</li><li>Cross-Validation</li><li>GridSearchCV</li></ul></div>
+<div class="card"><h3>NLP &amp; Generative AI</h3><ul class="chips"><li>NLTK</li><li>SpaCy</li><li>Regular Expression</li><li>LangChain</li><li>Google Gemini</li><li>HuggingFace</li><li>BERT</li></ul></div>
+<div class="card"><h3>Visualization</h3><ul class="chips"><li>Matplotlib</li><li>Seaborn</li></ul></div>
+<div class="card"><h3>Tools &amp; Deployment</h3><ul class="chips"><li>FastAPI</li><li>Git</li><li>GitHub</li><li>Docker</li></ul></div>
+</div></section>
+
+<section id="experience" class="wrap"><h2 class="title reveal">Experience</h2><div class="timeline">
+<article class="item reveal"><span class="date">Jul 2026 – Present</span><h3>Microsoft Machine Learning Engineer Trainee</h3><p class="org">Digital Egypt Pioneers Initiative (DEPI) · Hybrid</p><ul><li>Using Microsoft Azure to translate raw data from various pipelines into scalable Data Science and Machine Learning models.</li><li>Building practical expertise in Prompt Engineering, MLOps tools (MLflow, Hugging Face), NLP with Attention Models, Computer Vision, and Deep Learning.</li></ul></article>
+<article class="item reveal"><span class="date">Aug 2025</span><h3>Artificial Intelligence Trainee</h3><p class="org">National Telecommunication Institute (NTI) · Virtual (Online Training)</p><ul><li>Completed an intensive 90-hour training covering the end-to-end Machine Learning pipeline models.</li><li>Executed an 18-hour practical capstone project applying applied mathematics and predictive AI techniques to solve real-world problems.</li></ul></article>
+</div></section>
+
+<section id="projects" class="wrap"><h2 class="title reveal">Featured Projects</h2><div class="grid projects">
+<article class="card project reveal"><span class="num">01</span><h3>BigMart Sales Prediction</h3><p class="sub">Regression Analysis</p><p>Regression models that predict product sales from the BigMart Sales dataset.</p><ul><li>Cleaned data, ran EDA and feature engineering, handled missing values, standardized categorical labels, and investigated outliers with the IQR method.</li><li>Built preprocessing pipelines with StandardScaler, One-Hot Encoding, and ColumnTransformer.</li><li>Compared Linear and Polynomial Regression on product, outlet, and sales features, evaluated with MAE, MSE, and R².</li></ul><ul class="chips"><li>Python</li><li>Scikit-Learn</li><li>Regression</li></ul><!-- Add repo: <a class="btn small" href="YOUR_REPO_URL">GitHub</a> --></article>
+<article class="card project reveal"><span class="num">02</span><h3>Breast Cancer Classification</h3><p class="sub">Logistic Regression</p><p>A binary classifier that distinguishes between benign and malignant breast tumors.</p><ul><li>Performed data cleaning, EDA, numerical feature analysis, and IQR outlier investigation.</li><li>Built a pipeline with SimpleImputer, StandardScaler, and ColumnTransformer.</li><li>Evaluated training and testing performance with Accuracy, Precision, Recall, F1-score, and Confusion Matrix.</li></ul><ul class="chips"><li>Python</li><li>Scikit-Learn</li><li>Logistic Regression</li></ul></article>
+<article class="card project reveal"><span class="num">03</span><h3>Customer Churn Prediction</h3><p class="sub">Machine Learning</p><p>A machine learning pipeline that predicts customer churn from service, contract, and billing data.</p><ul><li>Performed EDA, feature engineering, and One-Hot Encoding of categorical features.</li><li>Compared Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, and XGBoost.</li><li>Tuned Gradient Boosting with GridSearchCV and 5-fold cross-validation, evaluated with Precision, Recall, F1-score, and Classification Reports.</li></ul><ul class="chips"><li>Python</li><li>XGBoost</li><li>GridSearchCV</li></ul></article>
+</div></section>
+
+<section id="education" class="wrap"><h2 class="title reveal">Education</h2>
+<div class="card reveal"><span class="date">Oct 2023 – Expected 2028</span><h3>B.Sc. in Electronics and Communication Engineering</h3><p class="org">Mansoura University · Mansoura, Egypt</p><p>Second Year Student · Overall Grade: Excellent</p></div>
+<h2 class="title sm reveal">Certifications &amp; Training</h2>
+<ul class="list reveal"><li>AI Internship – National Telecommunication Institute (NTI)</li><li>Mathematics for Machine Learning: Linear Algebra</li><li>Algebra and Differential Calculus for Data Science</li></ul>
+<h2 class="title sm reveal">Volunteering</h2>
+<p class="reveal"><strong>Breakin point</strong> – Digital Design Track, Breakin Point Team, Mansoura University.</p>
+<h2 class="title sm reveal">Languages</h2>
+<p class="reveal"><strong>Arabic:</strong> Native · <strong>English:</strong> Proficient</p></section>
+
+<section id="contact" class="wrap reveal"><h2 class="title">Contact</h2><p>Open to Machine Learning, Artificial Intelligence, and Data Science internships.</p>
+<div class="grid"><a class="card link" href="mailto:ahmedellmalllah@gmail.com"><h3>Email</h3><p>ahmedellmalllah@gmail.com</p></a><a class="card link" href="tel:+201025724159"><h3>Phone</h3><p>+20 1025724159</p></a><a class="card link" href="https://www.linkedin.com/in/ahmed-ellmallah" target="_blank" rel="noopener"><h3>LinkedIn</h3><p>linkedin.com/in/ahmed-ellmallah</p></a></div></section>
+</main>
+<footer><p>© <span id="year">2026</span> Ahmed Hamed Ellmallah · <a href="https://www.linkedin.com/in/ahmed-ellmallah" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:ahmedellmalllah@gmail.com">Email</a></p></footer>
+<script src="script.js"></script>
+</body>
 </html>
