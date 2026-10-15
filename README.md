@@ -3,7 +3,7 @@
 Static portfolio (HTML, CSS, JavaScript). No build step, no dependencies.
 
 ## Before publishing
-1. Your photo is in `assets/photo.jpg`. To change it, replace that file (square crop, about 800x800, under 200 KB).
+1. Your photo is `assets/photo.jpg` and project images are in `assets/`. Replace those files to change them.
 2. Optional: add your GitHub profile link in the hero `.social` block, and repo buttons inside each project card (see the comment in `index.html`).
 
 ## Preview locally
